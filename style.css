@@ -1,0 +1,208 @@
+html{
+    scroll-behavior:smooth;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 30px;
+    background-color:whitesmoke;
+    color:black;
+    
+    
+}
+body{
+    background-color:darkblue;
+    color:white;
+    
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+nav{
+    display:flex;
+    gap:20px;
+    
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.card{
+    color:black;
+}
+.hero{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background:linear-gradient(135deg, darkblue,black);
+}.hero h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+button{
+    padding:12px 24px;
+    border-radius:8px;
+    border:2px solid black;
+    cursor:pointer;
+    margin:10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    
+    
+}
+button:hover{
+    background-color:black;
+    color:white;
+    transition:0.3s;
+    transform: translateY(-5px)
+}
+.about{
+    height: 100vh;
+    padding:20px;
+    text-align: center;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-bullets{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+.skills{
+    min-height:100vh;
+    padding:20px;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+
+}
+.skill-container{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+
+
+}
+.skill-card{
+    width:350px;
+    padding:20px;
+    border-radius:10px;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+}
+.skill-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.projects{
+    min-height:100vh;
+    padding:20px;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+
+}
+.projects-container{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+
+
+}
+.project-card{
+    width:350px;
+    padding:20px;
+    border-radius:10px;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+}
+.project-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.contact{
+    min-height: 100vh;
+    padding: 80px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg, rgb(12, 50, 146),black );
+
+}
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:350px;
+}
+input{
+    padding:20px;
+    border-radius:10px;
+    border:2px solid black;
+
+}
+textarea{
+    padding:20px;
+    height:120px;
+    resize:none;
+    border-radius:10px;
+    border:2px solid black;
+}.contact button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background-color:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}.contact button:hover{
+    background-color:#1d4ed8;
+}input:focus,
+textarea:focus{
+    outline:none;
+    border:2px solid #2563eb;
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap:20px;
+        padding:20px;
+    }
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }.hero h1{
+        font-size: 35px;
+    }.skill-card,.project-card,.contact form{
+        width:90%;
+    }.hero-buttons{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+    }.hero p{
+        font-size:18px;
+    }h2{
+        font-size:30px;
+    }
+
+
+}
